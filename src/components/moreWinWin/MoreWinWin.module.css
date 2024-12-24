@@ -1,0 +1,225 @@
+.content{
+  width: 85.6%;
+  margin: 0 auto;
+}
+@media (max-width:1200px){
+  .content{
+    width: calc(100% - 64px);
+  }
+}
+@media (max-width:810px){
+  .content{
+    width: calc(100% - 40px);
+  }
+}
+.linkBlock{
+  width: 64px;
+  margin-bottom: 48px;
+}
+@media (max-width:810px){
+  .linkBlock{
+    margin-bottom: 32px;
+  }
+}
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #909090;
+text-decoration: none;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px; /* 125% */
+transition: all ease .3s;
+}
+@media(hover: hover){
+.link:hover .svg path{
+  fill: #fff
+}
+}
+@media(hover: hover){
+.link:hover p{
+  color: #fff;
+}
+}
+
+.svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg svg path{
+  fill: #909090;
+
+  transition: all ease .3s;
+}
+.link p{
+  transition: all ease .3s;
+}
+.header{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  gap: 120px;
+}
+@media (max-width:810px){
+  .header{
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+}
+.titleBlock{
+  max-width: 812px;
+}
+.title{
+font-size: 40px;
+font-weight: 400;
+line-height: 44px; /* 110% */
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+}
+.title::before{
+  content: '';
+  display: block;
+  background: url(../../assets/moreWinWInIcon.svg) center no-repeat;
+  background-size: cover;
+  margin-right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+@media (max-width:1200px){
+  .title{
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .title::before{
+    width: 32px;
+    height: 32px;
+  }
+}
+.subtitle{
+  color: #909090;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px; /* 150% */
+}
+.list{
+  flex: 0 0 auto;
+  min-width: 30%;
+}
+.list li{
+  list-style: none;
+}
+.list li:last-child{
+  margin-bottom: 0;
+}
+.listItem{
+  display: flex;
+  align-items: center;
+  color: #909090;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px; /* 125% */
+  margin-bottom: 16px;
+}
+.listItem::before{
+  margin-right: 12px;
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+}
+.listItem span{
+  color: #FFF;
+  margin-left: 8px;
+}
+
+
+.contextBlock{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 48px;
+  gap: 48px;
+}
+@media (max-width:810px){
+  .contextBlock{
+    padding-top: 32px;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.contextTextBlock{
+  width: 50%;
+
+}
+@media (max-width:810px){
+  .contextTextBlock{
+    width: 100%;
+  }
+}
+.contextTitle{
+  width: 50%;
+  flex: 1 1 auto;
+  color: #FFF;
+font-size: 40px;
+font-weight: 400;
+line-height: 44px; /* 110% */
+}
+@media (max-width:1200px){
+  .contextTitle{
+    font-size: 32px;
+    line-height: 36px;
+    
+  }
+}
+@media (max-width:810px){
+  .contextTitle{
+    font-size: 28px;
+    line-height: 36px;
+    width: 100%;
+  }
+}
+.contextText{
+  margin-bottom: 48px;
+  max-width: 696px;
+}
+@media (max-width:810px){
+  .contextText{
+    margin-bottom: 32px;
+  }
+}
+
+.contextParagraph{
+  color: #909090;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px; /* 150% */
+}
+.contextParagraphItem{
+  margin-bottom: 12px;
+}
+
+.exampleMainImg{
+  margin-bottom: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media (max-width:810px){
+  .exampleMainImg{
+    margin-bottom: 36px;
+    border-radius: 8px;
+  }
+}
+.exampleMainImg img{
+  width: 100%;
+  object-fit: cover;
+  
+}

@@ -1,0 +1,249 @@
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  /* overflow: hidden; */
+}
+.wrapper{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  background: #121212;
+  color: #fff;
+  height: 100%;
+}
+/* .wrapper::before{
+  content: '';
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;right: 0;bottom: 0;
+  background: rgba(0, 0, 0, 0.80);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+
+} */
+@media (max-width:1200px){
+  .wrapper{
+    display: block;
+  }
+  
+}
+.main{
+  width: calc(100% - 240px);
+  padding-top: 48px;
+  border-left: 1px solid #292929;
+  transition: all ease .3s;
+}
+.mainShow{
+  animation: mainShow .6s ease-out;
+}
+@keyframes mainShow {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media (max-width:1200px){
+  .main{
+    padding-top: calc(72px + 48px);
+    width: 100%;
+    border: none;
+  }
+}
+@media (max-width:810px){
+  .main{
+    padding-top: calc(64px + 36px);
+
+  }
+}
+.content{
+  position: relative;
+  width: 85.6%;
+  margin: 0 auto;
+}
+@media (max-width:1200px){
+  .content{
+    width: calc(100% - 64px);
+  }
+}
+@media (max-width:810px){
+  .content{
+    width: calc(100% - 40px);
+  }
+}
+hr {
+  border: none;
+  background-color: #292929; 
+  color: #292929; 
+  height: 1px; 
+}
+
+a.active p{
+ color: #fff
+}
+a.active path{
+ fill: #fff
+ }
+ .copiedShow{
+  animation: copied 3s linear;
+}
+@keyframes copied {
+  0%{
+    opacity: 0;
+
+  }
+  10%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+
+
+  }
+}
+ /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #666;
+}
+
+.showNav{
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0px) scale(1, 1) !important;
+}
+
+.overflowHidden{
+  overflow: hidden;
+}
+.frameBurger{
+  position: fixed;
+  height: 0vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.80);
+  z-index: 10;
+  opacity: 0;
+}
+.frameBurgerShow{
+  opacity: 1;
+  height: 100%;
+}
+#svgBurger{
+  transition: all ease .4s;
+  /* transform: rotate(0); */
+}
+.rotateSvg{
+  transform: rotate(135deg)
+
+}
+
+.loaderBlock{
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+.loader{
+  
+  animation: spin 2s linear infinite;
+  
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+    
+  }
+}
+
+.successBlockShow{
+  position: relative !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}

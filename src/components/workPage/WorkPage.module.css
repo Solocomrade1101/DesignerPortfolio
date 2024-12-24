@@ -1,0 +1,154 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+.work{
+  max-width: 100%;
+
+  padding-top: 48px;
+  margin-bottom: 64px;
+
+}
+
+.content{
+  flex: 1;
+  width: 85.6%;
+  margin: 0 auto;
+  
+}
+@media (max-width:1200px){
+  .content{
+    width: calc(100% - 64px);
+  }
+}
+@media (max-width:810px){
+  .content{
+    width: calc(100% - 40px);
+  }
+}
+@media (min-width:1200px){
+  .content{
+    min-height: calc(100vh - 84px - 49px);
+  }
+}
+@media (max-width:1200px){
+  .content{
+    min-height: calc(100vh - 84px - 49px);
+
+  }
+}
+@media (max-width:810px){
+  .content{
+  
+  }
+}
+.title{
+font-size: 40px;
+font-weight: 400;
+line-height: 36px; /* 128.571% */
+margin-bottom: 48px;
+}
+@media (max-width:1200px){
+  .title{
+    font-size: 32px;
+  }
+}
+.works{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+gap: 40px;
+margin-bottom: 48px;
+}
+@media (max-width:1200px){
+  .works{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+  }
+}
+@media (max-width:810px){
+  .works{
+    display: flex;
+
+  }
+}
+.item{
+  /* width: calc((100% - 80px) / 3); */
+  transition: all ease .3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media(hover: hover){
+.item:hover .img{
+transform: scale(1.07);
+}
+}
+
+.link{
+  text-decoration: none;
+  width: calc((100% - 80px) / 3);
+  color: #FFF;
+}
+@media (max-width:1200px){
+  .link{
+    width: 100%;
+  }
+}
+.imgBlock{
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 24px;
+
+}
+.img{
+  
+  
+  width: 100%;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+-ms-interpolation-mode: nearest-neighbor;  /* IE */
+image-rendering: crisp-edges; /* Стандартное свойство */
+  transition: all ease .5s;
+}
+.img img{
+  width: 100%;
+  object-fit: cover;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 8px;
+
+}
+.icon{
+  margin-right: 8px;
+}
+.place{
+  color: #909090;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+}
+.date{
+  color: #909090;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+flex-grow: 3;
+text-align: end
+}
+.subtitle{
+font-size: 20px;
+font-weight: 400;
+line-height: 24px; /* 120% */
+}

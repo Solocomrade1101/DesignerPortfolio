@@ -1,0 +1,156 @@
+.sidebar{
+  position: fixed;
+  left: 0;
+  width: 240px;
+  z-index: 1000;
+  /* border-right: 1px solid #292929; */
+}
+
+@media (max-width:1200px){
+  .sidebar{
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    
+    /* padding: 0 24px ; */
+
+  }
+}
+.burger{
+  display: none;
+  border-left: 1px  solid #292929;
+  padding: 23px;
+  cursor: pointer;
+  
+  
+}
+@media (max-width:1200px){
+  .burger{
+    display: block;
+  }
+}
+@media (max-width:810px){
+  .burger{
+    padding: 19px;
+  }
+}
+.title{
+  width: 100%;
+  height: 116px;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  border-bottom: 1px solid #292929; 
+}
+@media (max-width:1200px){
+  .title{
+    padding: 0 0 0 24px;
+    height: 72px;
+    justify-content: space-between;
+    background: #121212;
+
+  }
+}
+@media (max-width:810px){
+  .title{
+    padding: 0 0 0 20px;
+    height: 64px;
+
+  }
+}
+.titleText{
+  color: #fff;
+  font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+cursor: pointer;
+}
+@media (max-width:1200px){
+  .titleText span{
+    display: none;
+  }
+}
+.titleText span{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    color: #909090;
+}
+.navigation{
+  display: flex;
+
+}
+@media (max-width:1200px){
+  .navigation{
+    position: relative;
+    background: #121212;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    
+    transform: translateY(-120px) scale(1, 0);
+
+    transition: all ease .3s;
+    
+    
+  }
+}
+
+.items{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item{
+  height: 60px;
+  cursor: pointer;
+  border-bottom: 1px solid #292929;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+  transition: all ease .3s;
+  
+}
+@media(hover: hover){
+.item:hover{
+  background: #171717;
+}
+}
+@media(hover: hover){
+.item:hover .link{
+color: #fff;
+}
+}
+
+path{
+  transition: all ease .3s;
+
+}
+@media(hover: hover){
+.item:hover path{
+  fill: #fff;
+  }
+}
+
+.link{
+  transition: all ease .3s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #909090;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px; /* 125% */
+}
+.link span{
+  margin-left: 12px;
+}
+.active .item link{
+  color: #fff
+}
+.navLink{
+  text-decoration: none;
+
+}

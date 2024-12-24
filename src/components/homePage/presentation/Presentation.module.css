@@ -1,0 +1,142 @@
+.present{
+width: 812px;
+margin-bottom: 64px;
+}
+@media (max-width:1200px){
+  .present{
+    width: 100%;
+  }
+}
+@media (max-width:810px){
+  .present{
+    margin-bottom: 36px;
+  }
+}
+.logo{
+width: 100px;
+height: 100px;
+margin-bottom: 48px;
+border-radius: 8px;
+overflow: hidden;
+}
+.logo img{
+  width: 100%;
+}
+.title{
+font-size: 40px;
+font-weight: 400;
+line-height: 44px; /* 110% */
+margin-bottom: 20px;
+}
+@media (max-width:1200px){
+  .title{
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+.description{
+  color: #909090;
+font-size: 18px;
+font-weight: 300;
+line-height: 24px; /* 133.333% */
+margin-bottom: 48px;
+}
+@media (max-width:810px){
+  .description{
+    margin-bottom: 32px;
+  }
+}
+.social{
+  display: flex;
+  width: 240px;
+  height: 48px;
+
+}
+.social div:last-child{
+  margin-right: 0;
+}
+.item{
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+border: 1px solid #292929;
+margin-right: 16px;
+cursor: pointer;
+transition: all ease .3s;
+}
+.item a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media(hover: hover){
+.item:hover{
+background: #171717;
+}
+}
+@media(hover: hover){
+.item:hover path{
+  fill: #fff
+}
+}
+
+.status{
+  position: absolute;
+  top: 0;
+  right: 0;
+width: 140px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
+background: rgba(3, 226, 107, 0.06);
+cursor: pointer;
+transition: all ease .3s;
+/* display: none; */
+}
+/* @media (max-width:1200px){
+  .status{
+    top: calc(48px + 72px);
+    right: 24px;
+  }
+}
+@media (max-width:810px){
+  .status{
+    top: calc(48px + 55px);
+    right: 24px;
+    
+  }
+} */
+@media(hover: hover){
+.status:hover{
+  background: rgba(3, 226, 107, 0.10);;
+}
+}
+
+.text{
+  color: #03E26B;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+.text::before{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #03E26B;
+  margin-right: 8px;
+
+
+}
+a{
+  text-decoration: none;
+}
